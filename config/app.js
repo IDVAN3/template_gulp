@@ -11,9 +11,9 @@ module.exports = {
 
     pug: {
         pretty: isDev,
-        data: {
-            news: require('../data/news.json')
-        }
+        // data: {
+        //     news: require('../data/news.json')
+        // }
     },
 
     webpack: {
