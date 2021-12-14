@@ -1,0 +1,50 @@
+@import "./config/var.scss";
+@import "./config/resize-style.scss";
+@import "./config/mixin.scss";
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $padd-container;
+}
+
+input,
+button,
+textarea {
+    font-family: $base-font-family;
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-size: $base-font-size;
+    line-height: 1.25;
+    font-family: $base-font-family;
+    min-width: $min-width;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    &.lock {
+        overflow-y: hidden;
+    }
+
+    @include media-mob {
+        background: #000;
+        color: #fff;
+    }
+}
+
+@import "block/*.scss";

@@ -1,0 +1,15 @@
+extends layout/app 
+
+block news 
+
+     section.section-news
+        .container
+            .news
+                h1.title Main 
+            
+                img(src="img/shot_041.jpg", alt="WoT", width="500")
+
+                ul.news-list 
+                    each item in news
+                        li= item.name
+        
